@@ -62,7 +62,7 @@
                         <ul class="booking-list">
                             <li class="booking-item">
                                 <input class="booking-choice-in" type="checkbox" checked id="pool">
-                                <label for="pool">Басейн</label>
+                                <label for="pool">Бассейн</label>
                             </li>
                             <li class="booking-item">
                                 <input class="booking-choice-in" type="checkbox" checked id="parking">
@@ -91,13 +91,15 @@
                         </li>
                     </ul>
                 </fieldset>
-                <ul class="booking-price-list">
-                    <li class="booking-price-item">
-                        <h2 class="booking-price">Стоимость</h2>
-                        <input class="booking-price-choice" type="text" name="from" placeholder="от" value="0">
-                        <input class="booking-price-choice" type="text" name="to" placeholder="до" value="9000">
-                    </li>
-                </ul>
+                <fieldset class="booking-price">
+                    <legend class="booking-price-name">Стоимость</legend>
+                    <ul class="booking-price-list">
+                        <li class="booking-price-item">
+                            <input class="booking-price-choice" type="text" name="from" placeholder="от" value="0">
+                            <input class="booking-price-choice" type="text" name="to" placeholder="до" value="9000">
+                        </li>
+                    </ul>
+                </fieldset>
 
                 <button class="booking-button1" type="submit">Применить</button>
                 <button class="booking-button2" type="reset">Сбросить</button>
