@@ -1,229 +1,288 @@
 @font-face {
-    font-family: "PT Sans";
+  font-family: "PT Sans";
 
-    font-style: normal;
-    font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
 
-    src: url("../fonts/ptsans-400.woff2") format("woff2");
-    font-display: swap;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
 
 }
 
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
 
-    src: url("../fonts/ptsans-700.woff2") format("woff2");
-    font-display: swap;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
 
 }
 
 body {
-    font-family: "PT Sans", sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-    color: #000000;
-    background-color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .button {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #756157;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #756157;
 
 }
 
 .page-header {
-    color: #000000;
-    background-color: #ffffff;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .navigation-link {
-    font-family: "PT Sans", sans-serif;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 700;
-    text-align: center;
-    color: #000000;
-    text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
 }
 
-.main-index {
-    color: #000000;
-    background-color: ##82B3D3;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-image: url("../images/sedona-background-main.jpg");
+/* не работает*/
+
+.navigation-link-search {
+  background-image: url("../images/search.svg");
+}
+
+.navigation-link-favorites {
+  background-image: url("../images/heard.svg");
+}
+
+.hero {
+  color: #000000;
+  background-color: #82b3d3;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-image: url("../images/sedona-background-main.jpg");
 }
 
 .main-block {
-    background-color: #ffffff;
-    text-align: center;
+  background-color: #ffffff;
+  text-align: center;
 }
 
 .main-title {
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .main-text {
-    font-size: 22px;
-    line-height: 26px;
-    color: #333333;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
 }
 
 .advantages-dark {
-    text-align: center;
-    color: #ffffff;
-    background-color: #82B3D3;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
 }
 
 .advantages-title--dark {
-    font-size: 24px;
-    line-height: 28px;
-    text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
 .advantages-light {
-    text-align: center;
-    color: #333333;
-    background-color: rgba(131, 179, 211, 0.12);
+  text-align: center;
+  color: #333333;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-title--light {
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
-    text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .advantages-medium {
-    text-align: center;
-    color: #333333;
-    background-color: rgba(131, 179, 211, 0.2);
+  text-align: center;
+  color: #333333;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-title--medium {
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
-    text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
-/* вопрос */
+.services-house {
+  background-image: url("../images/house.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
 
 .services-block {
-    text-align: center;
-    color: #333333;
-    background-color: #ffffff;
-    background-image: url("../images/burger.svg");
-    background-repeat: no-repeat;
-    background-position: top center;
+  text-align: center;
+  color: #333333;
+  background-color: #ffffff;
+  background-image: url("../images/burger.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .services-title--block {
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
-    text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services-gift {
+  background-image: url("../images/gift.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .newsletter-main {
-    color: #ffffff;
-    background-color: #000000;
-    background-image: url("../images/newsletter-image.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
+  background-image: url("../images/newsletter-image.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .newsletter-title {
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .newsletter-text {
-    font-size: 22px;
-    line-height: 26px;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .button-main {
-    background-color: #82B3D3;
+  background-color: #82b3d3;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .number {
-    font-size: 40px;
-    line-height: 40px;
-    text-decoration: none;
-    text-align: center;
-    color: #000000;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
 }
 
 .booking-choice {
-    color: #ffffff;
-    background-color: #000000;
-    background-image: url("../images/form-mountains.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+  color: #ffffff;
+  background-color: #82b3d3;
+  background-image: url("../images/form-mountains.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .booking-main {
-    font-size: 60px;
-    line-height: 78px;
+  font-size: 60px;
+  line-height: 78px;
 }
 
 .breadcrumbs-list {
-    font-size: 16px;
-    line-height: 21px;
+  font-size: 16px;
+  line-height: 21px;
 }
 
-.booking-name, .booking-price-name {
-    font-size: 20px;
-    line-height: 24px;
+.booking-name,
+.booking-price-name {
+  font-size: 20px;
+  line-height: 24px;
 }
 
-/* вопрос */
+/* сделало, но оно посностью не сработало*/
+
+.booking-price-choice {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  width: 700;
+  color: #000000;
+}
+
+/* вопрос, вроде все сработало, но цвет не сработал, для общего текста*/
 
 .booking-form {
-    font-size: 18px;
-    line-height: 23px;
+  font-size: 18px;
+  line-height: 23px;
 }
 
-/* вопрос */
-
-.booking-button1 {
-    background-color: rgba(130, 179, 211, 0);
+.booking-button-reset {
+  background-color: transparent;
 }
 
 .hotels-all-title {
-    font-size: 30px;
-    line-height: 36px;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .hotels-catalog--title {
-    font-size: 24px;
-    line-height: 28px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .hotel-rating {
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #333333;
-    background-color: #F2F2F2;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #f2f2f2;
 }
 
-/* вопрос */
+.button--active {
+  background-color: #7db54f;
+}
 
-.button-green {
-    background-color: #7DB54F;
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  width: 700;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
+.pagination-link--active {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.pagination-link--more {
+  color: #000000;
+  background-color: #ffffff;
 }
