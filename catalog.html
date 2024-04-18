@@ -27,14 +27,14 @@
 
         <ul class="navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link-search" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link-favorites" href="#">
               <span class="visually-hidden">
                 Избранные
               </span>
@@ -54,23 +54,23 @@
             Гостиницы
           </li>
         </ol>
+        <form class="booking-form" action="#" method="get">
         <fieldset class="booking">
           <legend class="booking-name">Инфраструктура:</legend>
-          <form class="booking-form" action="#" method="get">
-            <ul class="booking-list">
-              <li class="booking-item">
-                <input class="booking-choice-in" type="checkbox" checked id="pool">
-                <label for="pool">Бассейн</label>
-              </li>
-              <li class="booking-item">
-                <input class="booking-choice-in" type="checkbox" checked id="parking">
-                <label for="parking">Парковка</label>
-              </li>
-              <li class="booking-item">
-                <input class="booking-choice-in" type="checkbox" id="wi-fi">
-                <label for="wi-fi">Wi-fi</label>
-              </li>
-            </ul>
+          <ul class="booking-list">
+            <li class="booking-item">
+              <input class="booking-choice-in" type="checkbox" checked id="pool">
+              <label for="pool">Бассейн</label>
+            </li>
+            <li class="booking-item">
+              <input class="booking-choice-in" type="checkbox" checked id="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li class="booking-item">
+              <input class="booking-choice-in" type="checkbox" id="wi-fi">
+              <label for="wi-fi">Wi-fi</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="booking">
           <legend class="booking-name">Тип жилья:</legend>

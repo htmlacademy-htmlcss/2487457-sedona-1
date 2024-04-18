@@ -55,14 +55,25 @@ body {
   text-decoration: none;
 }
 
-/* не работает*/
-
 .navigation-link-search {
   background-image: url("../images/search.svg");
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
 }
 
 .navigation-link-favorites {
   background-image: url("../images/heard.svg");
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .hero {
@@ -225,17 +236,13 @@ body {
   line-height: 24px;
 }
 
-/* сделало, но оно посностью не сработало*/
-
 .booking-price-choice {
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
-  width: 700;
+  font-weight: 700;
   color: #000000;
 }
-
-/* вопрос, вроде все сработало, но цвет не сработал, для общего текста*/
 
 .booking-form {
   font-size: 18px;
@@ -285,4 +292,12 @@ body {
 .pagination-link--more {
   color: #000000;
   background-color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-item {
+  display: flex;
 }
