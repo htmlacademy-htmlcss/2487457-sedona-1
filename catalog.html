@@ -25,7 +25,7 @@
           </li>
         </ul>
 
-        <ul class="navigation-user">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link-search" href="#">
               <span class="visually-hidden">
@@ -41,6 +41,7 @@
             </a>
           </li>
           <button class="button" type="button">Хочу сюда!</button>
+        </ul>
       </nav>
     </header>
     <main>
@@ -55,52 +56,52 @@
           </li>
         </ol>
         <form class="booking-form" action="#" method="get">
-        <fieldset class="booking">
-          <legend class="booking-name">Инфраструктура:</legend>
-          <ul class="booking-list">
-            <li class="booking-item">
-              <input class="booking-choice-in" type="checkbox" checked id="pool">
-              <label for="pool">Бассейн</label>
-            </li>
-            <li class="booking-item">
-              <input class="booking-choice-in" type="checkbox" checked id="parking">
-              <label for="parking">Парковка</label>
-            </li>
-            <li class="booking-item">
-              <input class="booking-choice-in" type="checkbox" id="wi-fi">
-              <label for="wi-fi">Wi-fi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="booking">
-          <legend class="booking-name">Тип жилья:</legend>
-          <ul class="booking-type-list">
-            <li class="booking-type-item">
-              <input class="booking-housing-type" type="checkbox" checked id="hotels">
-              <label for="hotels">Гостиница</label>
-            </li>
-            <li class="booking-type-item">
-              <input class="booking-housing-type" type="checkbox" id="motel">
-              <label for="motel">Мотель</label>
-            </li>
-            <li class="booking-type-item">
-              <input class="booking-housing-type" type="checkbox" id="apartments">
-              <label for="apartments">Апартаменты</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="booking-price">
-          <legend class="booking-price-name">Стоимость, ₽:</legend>
-          <ul class="booking-price-list">
-            <li class="booking-price-item">
-              <input class="booking-price-choice" type="text" name="from" placeholder="от" value="0">
-              <input class="booking-price-choice" type="text" name="to" placeholder="до" value="9000">
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset class="booking">
+            <legend class="booking-name">Инфраструктура:</legend>
+            <ul class="booking-list">
+              <li class="booking-item">
+                <input class="booking-choice-in" type="checkbox" checked id="pool">
+                <label for="pool">Бассейн</label>
+              </li>
+              <li class="booking-item">
+                <input class="booking-choice-in" type="checkbox" checked id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li class="booking-item">
+                <input class="booking-choice-in" type="checkbox" id="wi-fi">
+                <label for="wi-fi">Wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="booking">
+            <legend class="booking-name">Тип жилья:</legend>
+            <ul class="booking-type-list">
+              <li class="booking-type-item">
+                <input class="booking-housing-type" type="checkbox" checked id="hotels">
+                <label for="hotels">Гостиница</label>
+              </li>
+              <li class="booking-type-item">
+                <input class="booking-housing-type" type="checkbox" id="motel">
+                <label for="motel">Мотель</label>
+              </li>
+              <li class="booking-type-item">
+                <input class="booking-housing-type" type="checkbox" id="apartments">
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="booking-price">
+            <legend class="booking-price-name">Стоимость, ₽:</legend>
+            <ul class="booking-price-list">
+              <li class="booking-price-item">
+                <input class="booking-price-choice" type="text" name="from" placeholder="от" value="0">
+                <input class="booking-price-choice" type="text" name="to" placeholder="до" value="9000">
+              </li>
+            </ul>
+          </fieldset>
 
-        <button class="button booking-button button-main" type="submit">Применить</button>
-        <button class="button booking-button-reset" type="reset">Сбросить</button>
+          <button class="button booking-button button-main" type="submit">Применить</button>
+          <button class="button booking-button-reset" type="reset">Сбросить</button>
 
         </form>
       </section>
@@ -109,6 +110,32 @@
         <h2 class="hotels-all-title">
           Найдено гостиниц: 38
         </h2>
+        <select class="select-control" aria-label="Сортировка">
+          <option class="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогое</option>
+          <option value="popular">Сначала популярное</option>
+        </select>
+        <ul class="hotel-view-list">
+          <li class="hotel-view-item">
+            <a class="net" href="#">
+              <span class="visually-hidden">Сетка</span>
+              <img class="net-images" src="#">
+            </a>
+          </li>
+          <li class="hotel-view-item">
+            <a class="" href="#">
+              <span class="visually-hidden"></span>
+              <img class="" src="#">
+            </a>
+          </li>
+          <li class="hotel-view-item">
+            <a class="list" href="#">
+              <span class="visually-hidden">Список</span>
+              <img class="list-images" src="#">
+            </a>
+          </li>
+
+        </ul>
         <ul class="hotels-catalog--list">
           <li class="hotels-catalog--item">
             <a class="hotel" href="#">

@@ -19,12 +19,20 @@
 
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .button {
@@ -44,6 +52,24 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 339px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  width: 268px;
+  margin-left: auto;
+}
+
 
 .navigation-link {
   font-family: "PT Sans", sans-serif;
@@ -84,7 +110,18 @@ body {
   background-image: url("../images/sedona-background-main.jpg");
 }
 
+.welcome {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
 .main-block {
+  margin: 0;
+  padding: 0;
   background-color: #ffffff;
   text-align: center;
 }
@@ -99,6 +136,11 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .advantages-dark {
@@ -204,6 +246,10 @@ body {
   overflow: hidden;
 }
 
+.page-footer {
+  background-color: #ffffff;
+}
+
 .number {
   font-size: 40px;
   line-height: 40px;
@@ -253,6 +299,10 @@ body {
   background-color: transparent;
 }
 
+.hotels-catalog {
+  background-color: #ffffff;
+}
+
 .hotels-all-title {
   font-size: 30px;
   line-height: 36px;
@@ -294,10 +344,61 @@ body {
   background-color: #ffffff;
 }
 
-.navigation {
+.advantages-conteiner-img {
   display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
-.navigation-item {
+.advantages-image {
+  display: inline;
+}
+
+.advantages-conteiner {
   display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 385px;
+}
+
+.services-conteiner {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.services-item {
+  width: 400px;
+}
+
+.page-footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.footer-social-list {
+  width: 170px;
+}
+
+.namber {
+  width: 720px;
+}
+
+.logo {
+  width: 140px;
 }
