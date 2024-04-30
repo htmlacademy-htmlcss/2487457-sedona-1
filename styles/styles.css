@@ -45,31 +45,51 @@ body {
   text-decoration: none;
   color: #ffffff;
   background-color: #756157;
-
+  padding: 14px;
+  border-radius: 8px;
 }
 
 .page-header {
   color: #000000;
   background-color: #ffffff;
-}
-
-.navigation {
-  display: flex;
   width: 1200px;
   margin: 0 auto;
 }
 
+.navigation {
+  display: flex;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.navigation-logo {
+  position: relative;
+  height: 64px;
+  width: 140px;
+}
+
+.navigation-logo-image {
+  position: absolute;
+}
+
 .navigation-list {
+  display: flex;
+  list-style: none;
   width: 339px;
   margin: 0;
   padding: 0;
+  align-items: center;
+}
+
+.navigation-item {
+  margin-right: 19px;
 }
 
 .navigation-user {
   width: 268px;
   margin-left: auto;
+  justify-content: end;
 }
-
 
 .navigation-link {
   font-family: "PT Sans", sans-serif;
@@ -80,6 +100,11 @@ body {
   color: #000000;
   text-decoration: none;
 }
+
+
+/* .navigation-link:active {
+  color:red;
+} */
 
 .navigation-link-search {
   background-image: url("../images/search.svg");
@@ -107,7 +132,10 @@ body {
   background-color: #82b3d3;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-image: url("../images/sedona-background-main.jpg");
+  background-image: url("../images/devider.png"), url("../images/sedona-background-main.jpg");
+  background-position: bottom;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .welcome {
@@ -141,6 +169,39 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-item {
+  width: 33%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantages-item.advantages-item-wide {
+  width: 66%;
+}
+
+.advantages-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .advantages-dark {
@@ -344,7 +405,7 @@ body {
   background-color: #ffffff;
 }
 
-.advantages-conteiner-img {
+/* .advantages-conteiner-img {
   display: flex;
   width: 1200px;
   justify-content: space-between;
@@ -401,4 +462,4 @@ body {
 
 .logo {
   width: 140px;
-}
+} */
