@@ -60,8 +60,10 @@ body {
 
 .navigation {
   display: flex;
-  padding-right: 60px;
-  padding-left: 60px;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 70px;
+  padding-left: 70px;
 }
 
 .navigation-logo {
@@ -72,12 +74,13 @@ body {
 
 .navigation-logo-image {
   position: absolute;
+  padding-right: 30px;
 }
 
 .navigation-list {
   display: flex;
   list-style: none;
-  width: 339px;
+  width: 400px;
   margin: 0;
   padding: 0;
   align-items: center;
@@ -88,7 +91,7 @@ body {
 }
 
 .navigation-user {
-  width: 268px;
+  width: 310px;
   margin-left: auto;
   justify-content: end;
 }
@@ -104,9 +107,9 @@ body {
 }
 
 
-/* .navigation-link:active {
-  color:red;
-} */
+.navigation-link:active {
+  position: relative;
+}
 
 .navigation-link-search {
   background-image: url("../images/search.svg");
@@ -136,6 +139,7 @@ body {
   background-repeat: no-repeat no-repeat;
   background-image: url("../images/devider.png"), url("../images/sedona-background-main.jpg");
   background-position: bottom center, center center;
+  /* для чего эти падинги? */
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -150,11 +154,13 @@ body {
 }
 
 .main-block {
-  margin: 0;
-  padding: 0;
   background-color: #ffffff;
   text-align: center;
-  height: 261px;
+}
+
+.main-block-plus {
+  margin: 0;
+  padding: 70px 270px 90px;
 }
 
 .main-title {
@@ -191,20 +197,19 @@ body {
 }
 
 .advantages-item {
-  height: 385px;
+  padding: 113px 85px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-  flex-basis: 0;
 }
 
 .advantages-item.advantages-item-wide {
   display: flex;
+  padding: 0;
   flex-direction: row;
-  flex-grow: 1;
-  flex-basis: 100%;
+  justify-content: space-between;
 }
 
 .advantages-inner-wide {
@@ -212,8 +217,7 @@ body {
 }
 
 .advantages-inner-narrow {
-  flex-grow: 1;
-  flex-basis: 0;
+padding: 102px 85px;
 }
 
 
@@ -258,32 +262,34 @@ body {
 .services {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.services-conteiner {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 64px 348px 110px;
+  text-align: center;
 }
 
 .services-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .services-item {
-  height: 385px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 85px 81px;;
   flex-grow: 1;
   flex-basis: 0;
-}
-
-.services-conteiner {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  flex-basis: 100%;
 }
 
 .services-house {
@@ -315,7 +321,7 @@ body {
 }
 
 .hotels {
-  height: 406px;
+  padding: 96px 304px;
   text-align: center;
 }
 
@@ -326,6 +332,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+  padding: 96px 258px 104px;
 }
 
 .newsletter-title {
@@ -359,14 +366,11 @@ body {
 .page-footer {
   background-color: #ffffff;
   width: 1200px;
-  height: 120px;
   margin: 0 auto;
-}
-
-.page-footer-container {
-  display: flex;
-  padding-right: 60px;
-  padding-left: 60px;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 70px 30px; */
 }
 
 .footer-social-list {
@@ -514,25 +518,6 @@ body {
   background-color: #7db54f;
 }
 
-.pagination-link {
-  font-size: 20px;
-  line-height: 36px;
-  width: 700;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #82b3d3;
-}
-
-.pagination-link--active {
-  color: #000000;
-  background-color: #f2f2f2;
-}
-
-.pagination-link--more {
-  color: #000000;
-  background-color: #ffffff;
-}
-
 .hotels-catalog--list {
   display: grid;
   list-style: none;
@@ -549,8 +534,35 @@ body {
   padding: 25px;
 }
 
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  width: 700;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #82b3d3;
+  padding: 15px 25px;
+  border-radius: 4px;
+  display: block;
+  font-weight: 700;
+}
+
+.pagination-link--active {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.pagination-link--more {
+  color: #000000;
+  background-color: #ffffff;
+}
+
 .hotel-link {
   display: block;
+  /* почему подчеркнуто */
+  text-decoration: none;
+  list-style: none;
+  color: #000000;
 }
 
 .pagination-list {
@@ -567,9 +579,6 @@ body {
   margin-right: 0;
 }
 
-.pagination-link {
-  padding: 15px 25px;
-  border-radius: 8px;
-  display: block;
-  font-weight: 700;
+.newsletter {
+  padding: 96px 258px 104px;
 }
