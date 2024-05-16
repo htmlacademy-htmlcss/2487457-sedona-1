@@ -70,6 +70,7 @@ body {
   position: relative;
   height: 64px;
   width: 140px;
+  margin-right: 28px;
 }
 
 .navigation-logo-image {
@@ -139,9 +140,8 @@ body {
   background-repeat: no-repeat no-repeat;
   background-image: url("../images/devider.png"), url("../images/sedona-background-main.jpg");
   background-position: bottom center, center center;
-  /* для чего эти падинги? */
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .welcome {
@@ -160,7 +160,12 @@ body {
 
 .main-block-plus {
   margin: 0;
-  padding: 70px 270px 90px;
+  padding: 70px 275px 70px 275px;
+}
+
+.about {
+  margin: 0;
+  margin-top: 20px;
 }
 
 .main-title {
@@ -173,6 +178,8 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin: 0;
+  margin-top: 25px;
 }
 
 .page-container {
@@ -205,6 +212,11 @@ body {
   flex-grow: 1;
 }
 
+.advantages-image {
+  height: 100%;
+  object-fit: cover;
+}
+
 .advantages-item.advantages-item-wide {
   display: flex;
   padding: 0;
@@ -217,7 +229,7 @@ body {
 }
 
 .advantages-inner-narrow {
-padding: 102px 85px;
+  padding: 102px 85px;
 }
 
 
@@ -266,11 +278,16 @@ padding: 102px 85px;
 }
 
 .services-conteiner {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   margin: 0;
-  padding: 64px 348px 110px;
+  padding: 64px 347px;
   text-align: center;
+}
+
+.services-title-main {
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .services-list {
@@ -287,24 +304,54 @@ padding: 102px 85px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 85px 81px;;
+  padding: 85px 81px;
   flex-grow: 1;
   flex-basis: 0;
+  position: relative;
+  padding-top: 115px;
 }
 
-.services-house {
+.services-house::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 81px;
+  width: 75px;
+  height: 72px;
   background-image: url("../images/house.svg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center center;
+  background-size: 100% 100%;
 }
+
+/* .services-title {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.services-description {
+  margin: o;
+  margin-top: 30px;
+} */
 
 .services-block {
   text-align: center;
   color: #333333;
   background-color: #ffffff;
+}
+
+.services-food::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 81px;
+  width: 75px;
+  height: 72px;
   background-image: url("../images/burger.svg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center center;
+  background-size: 100% 100%;
 }
 
 .services-title--block {
@@ -314,15 +361,34 @@ padding: 102px 85px;
   text-transform: uppercase;
 }
 
-.services-gift {
+.services-gift::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 81px;
+  width: 75px;
+  height: 72px;
   background-image: url("../images/gift.svg");
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: 100% 100%;
 }
 
 .hotels {
   padding: 96px 304px;
   text-align: center;
+}
+
+.hotels-title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.hotels-button {
+  width: 376px;
+  height: 52px;
+  margin: 0;
+  margin-top: 54px;
 }
 
 .newsletter-main {
@@ -349,6 +415,13 @@ padding: 102px 85px;
 .button-main {
   background-color: #82b3d3;
 }
+
+/* .newsletter-form {
+width: 452px;
+height: 52px;
+border-radius: 4px 0 0 4px;
+padding: 12px 20px;
+} */
 
 .visually-hidden {
   position: absolute;
