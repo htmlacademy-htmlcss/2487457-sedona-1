@@ -81,7 +81,6 @@ body {
 
 .navigation-logo-image {
   position: absolute;
-  padding-right: 30px;
 }
 
 .navigation-list {
@@ -114,10 +113,16 @@ body {
   text-decoration: none;
 }
 
-
-.navigation-link:active {
-  position: relative;
-}
+/* .navigation-main:active {
+  position: absolute;
+  content: "";
+  left: -2px;
+  bottom: 0;
+  height: 2px;
+  width: 70px;
+  background-color: #756257;
+  margin-bottom: -20px;
+} */
 
 .navigation-link-search {
   background-image: url("../images/search.svg");
@@ -321,11 +326,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 85px 81px;
+  padding: 82px 81px;
   flex-grow: 1;
   flex-basis: 0;
   position: relative;
-  padding-top: 115px;
+  padding-top: 182px;
 }
 
 .services-house::after {
@@ -341,16 +346,14 @@ body {
   background-size: 100% 100%;
 }
 
-/* .services-title {
+.services-title {
   margin: 0;
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 
 .services-description {
-  margin: o;
-  margin-top: 30px;
-} */
+  margin: 0;
+}
 
 .services-block {
   text-align: center;
@@ -429,16 +432,31 @@ body {
   line-height: 26px;
 }
 
-.button-main {
-  background-color: #82b3d3;
+.newsletter-form {
+  display: flex;
+  justify-content: center;
 }
 
-/* .newsletter-form {
-width: 452px;
-height: 52px;
-border-radius: 4px 0 0 4px;
-padding: 12px 20px;
-} */
+.button-newsletter {
+  background-color: #82b3d3;
+  text-transform: uppercase;
+  padding: 8px 50px;
+  border-style: none;
+  width: 232px;
+  height: 52px;
+  border-radius: 0 4px 4px 0;
+}
+
+.newsletter-form-mail {
+  font-family: "PT Sans";
+  font-size: 18px;
+  width: 452px;
+  height: 52px;
+  border-radius: 4px 0 0 4px;
+  padding: 12px 20px;
+  background-color: #f2f2f2;
+  border: 0;
+}
 
 .visually-hidden {
   position: absolute;
@@ -457,10 +475,10 @@ padding: 12px 20px;
   background-color: #ffffff;
   width: 1200px;
   margin: 0 auto;
-  /* display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 70px 30px; */
+  padding: 40px 70px 30px;
 }
 
 .footer-social-list {
@@ -472,12 +490,26 @@ padding: 12px 20px;
   align-items: center;
 }
 
+.footer-social-item {
+  display: flex;
+  list-style: none;
+  width: 142px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.footer-social-images {
+  Padding: 0px, 10px, 0px, 10px;
+}
+
 .number {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   text-align: center;
   color: #000000;
+  align-items: center;
 }
 
 .booking-choice {
