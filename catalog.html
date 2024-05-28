@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <div class="shadow-container">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="#">
@@ -48,7 +49,7 @@
 
     <main class="page-container">
       <section class="booking-choice-main">
-        <h1 class="booking-main">Гостинцы Седоны</h1>
+        <h1 class="booking-main">Гостиницы Седоны</h1>
         <ol class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-navigation" href="./index.html">
@@ -70,6 +71,7 @@
             <ul class="booking-variants-list">
               <li class="booking-item">
                 <input class="booking-choice-in" name="comforts" type="checkbox" checked id="pool">
+                <span class="control-mark"></span>
                 <label class="booking-choice-type" for="pool">Бассейн</label>
               </li>
               <li class="booking-item">
@@ -108,15 +110,12 @@
               <li class="booking-price-item">
                 <input class="booking-price-choice" type="text" name="to" placeholder="до" value="9000">
               </li>
-              <!-- <li class="booking-price-range">
-                <input type="booking-range" id="price" name="price" min="0" max="9000" step="100" />
-              </li> -->
             </ul>
             <div class="range-scale">
-              <div class="range-bar">
+              <div class="range-bar"></div>
               <button class="range-toggle toggle-min" type="button">-</button>
               <button class="range-toggle toggle-max" type="button">-</button>
-              <div class="range-bar" style="right: 42px; width: 100px;"></div>
+              <div class="range-bar-main" style="right: 42px; width: 100px;"></div>
             </div>
           </fieldset>
           <div class="buttons-wrapper booking">
@@ -140,19 +139,16 @@
             <li class="hotel-view-item">
               <a class="hotel-net" href="#">
                 <span class="visually-hidden">Сетка</span>
-                <img class="net-images" src="#">
               </a>
             </li>
             <li class="hotel-view-item">
               <a class="hotel-description" href="#">
                 <span class="visually-hidden">Развернутое описание</span>
-                <img class="" src="#">
               </a>
             </li>
             <li class="hotel-view-item">
               <a class="hotel-list" href="#">
                 <span class="visually-hidden">Список</span>
-                <img class="list-images" src="#">
               </a>
             </li>
         </div>
@@ -281,6 +277,7 @@
         <img class="logo" src="images/html_academy.svg" alt="Логотип html академии" wight="114" height="32">
       </a>
     </footer>
+    </div>
   </body>
 
 </html>
