@@ -605,10 +605,6 @@ body {
   padding: 0 946px 40px 70px;
 }
 
-.booking-choice {
-  padding: 0 70px 73px 70px;
-}
-
 .breadcrumbs-item::after {
   content: ">";
   padding: 0 5px;
@@ -631,6 +627,7 @@ body {
   border: 1px solid #ffffff;
   margin: 2px 10px 2px 0;
   position: relative;
+  background-color: #ffffff;
 }
 
 .booking-choice-in + .control-mark::before {
@@ -641,6 +638,7 @@ body {
   border-radius: 4px;
   display: none;
   background-image: url(../images/check.svg);
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 20px;
@@ -653,12 +651,53 @@ body {
   display: block;
 }
 
+.booking-type-item {
+  display: flex;
+  align-items: center;
+}
+
+.control-mark-hotels {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  margin: 2px 10px 2px 0;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.booking-housing-type + .control-mark-hotels::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: none;
+  background-image: url(../images/dot.svg);
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  top: 0;
+  left: 0;
+}
+
+.booking-housing-type:checked + .control-mark-hotels::before {
+  content: "";
+  display: block;
+}
+
+.booking-choice {
+  margin: 0 70px 73px 70px;
+}
+
 .booking-name,
 .booking-price-name {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 /* .booking-choice-type {
@@ -793,20 +832,25 @@ body {
 }
 
 .hotel-view-item {
-  display: block;
+  display: flex;
+  justify-content: center;
   list-style: none;
   width: 48px;
   height: 48px;
   margin: 0;
   padding: 0;
-  border: 2px solid #000000;
-  /* #e5e5e5 */
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   margin-right: 8px;
+  align-items: center;
 }
 
 .hotel-view-item:last-child {
   margin-right: 0;
+}
+
+.hotel-view-main {
+  border-color: #000000;
 }
 
 .hotel-net {
@@ -817,7 +861,6 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 17px 16px;
 }
 
 .hotel-description {

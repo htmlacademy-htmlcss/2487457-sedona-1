@@ -70,16 +70,18 @@
             <legend class="booking-name">Инфраструктура:</legend>
             <ul class="booking-variants-list">
               <li class="booking-item">
-                <input class="booking-choice-in" name="comforts" type="checkbox" checked id="pool">
+                <input class="booking-choice-in visually-hidden" name="comforts" type="checkbox" checked id="pool">
                 <span class="control-mark"></span>
                 <label class="booking-choice-type" for="pool">Бассейн</label>
               </li>
               <li class="booking-item">
-                <input class="booking-choice-in" name="comforts" type="checkbox" checked id="parking">
+                <input class="booking-choice-in visually-hidden" name="comforts" type="checkbox" checked id="parking">
+                <span class="control-mark"></span>
                 <label for="parking">Парковка</label>
               </li>
               <li class="booking-item">
-                <input class="booking-choice-in" name="comforts" type="checkbox" id="wi-fi">
+                <input class="booking-choice-in visually-hidden" name="comforts" type="checkbox" id="wi-fi">
+                <span class="control-mark"></span>
                 <label for="wi-fi">Wi-fi</label>
               </li>
             </ul>
@@ -88,15 +90,18 @@
             <legend class="booking-name">Тип жилья:</legend>
             <ul class="booking-variants-list">
               <li class="booking-type-item">
-                <input class="booking-housing-type" name="accomodation" type="radio" checked id="hotels">
+                <input class="booking-housing-type visually-hidden" name="accomodation" type="radio" checked id="hotels">
+                <span class="control-mark-hotels"></span>
                 <label for="hotels">Гостиница</label>
               </li>
               <li class="booking-type-item">
-                <input class="booking-housing-type" name="accomodation" type="radio" id="motels">
+                <input class="booking-housing-type visually-hidden" name="accomodation" type="radio" id="motels">
+                <span class="control-mark-hotels"></span>
                 <label for="motel">Мотель</label>
               </li>
               <li class="booking-type-item">
-                <input class="booking-housing-type" name="accomodation" type="radio" id="apartments">
+                <input class="booking-housing-type visually-hidden" name="accomodation" type="radio" id="apartments">
+                <span class="control-mark-hotels"></span>
                 <label for="apartments">Апартаменты</label>
               </li>
             </ul>
@@ -136,7 +141,7 @@
             <option value="popular">Сначала популярное</option>
           </select>
           <ul class="hotel-view-list">
-            <li class="hotel-view-item">
+            <li class="hotel-view-item hotel-view-main">
               <a class="hotel-net" href="#">
                 <span class="visually-hidden">Сетка</span>
               </a>
