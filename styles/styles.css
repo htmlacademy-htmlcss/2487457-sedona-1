@@ -689,16 +689,16 @@ body {
   display: block;
 }
 
-.booking-choice {
-  margin: 0 70px 73px 70px;
-}
+/* .booking-choice {
+  padding: 0 70px 73px 70px;
+} */
 
 .booking-name,
 .booking-price-name {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 /* .booking-choice-type {
@@ -782,8 +782,6 @@ body {
 }
 
 .booking-price-choice {
-  display: flex;
-  justify-content: space-between;
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -791,9 +789,9 @@ body {
   color: #000000;
   padding: 12px 78px 12px 20px;
   width: 143px;
-  margin-right: 70px;
   margin-bottom: 36px;
   background-color: #f2f2f2;
+  border: none;
 }
 
 .booking-price-min {
@@ -810,6 +808,7 @@ body {
 .booking-price-max {
   border-radius: 0 4px 4px 0;
   position: relative;
+  margin-left: 2px;
 }
 
 .booking-price-max::after {
@@ -825,7 +824,12 @@ body {
 .booking-form {
   font-size: 18px;
   line-height: 23px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 151px 151px 290px 191px;
+  column-gap: 70px;
+  margin: 0 auto;
+  padding-left: 70px;
+  padding-bottom: 70px;
 }
 
 .booking-form fieldset {
@@ -839,14 +843,13 @@ body {
 }
 
 .booking {
-  flex-basis: 0;
-  flex-grow: 1;
+  padding: 0;
 }
 
-.buttons-wrapper {
-  margin-left: 70px;
+/* .buttons-wrapper {
+  padding-left: 70px;
   align-items: center;
-}
+} */
 
 .button-main {
   width: 190px;
