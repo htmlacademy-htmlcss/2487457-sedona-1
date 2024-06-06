@@ -230,35 +230,33 @@
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="auth-form" action="#" method="post">
-          <fieldset class="date-choice">
-            <legend class="visually-hidden">Модальное окно</legend>
-            <ul class="date-list">
-              <li class="date-item">
-                <label class="date-name" for="check-in">Дата заезда:</label>
-                <input class="date-choice-in" id="check-in" type="text" name="check-in" value="27 апреля 2020">
-                <p class="date-choice-text date-choice-error">Мы не можем отправить вас в прошлое.</p>
-              </li>
-              <li class="date-item">
-                <label class="date-name" for="check-out">Дата выезда:</label>
-                <input class="date-choice-out" id="check-out" type="text" name="check-out" value="1 сентября 2023">
-                <p class="date-choice-text">На эти даты есть свободные номера. Пока есть.</p>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="age-choice">
-            <ul class="age-choice-list">
-              <li class="age-choice-item">
-                <label class="age-choice-name" for="adults">Взрослые:</label>
-                <input class="age-choice-adults" id="adults" type="text" name="adults" value="2">
-              </li>
-              <li class="age-choice-item">
-                <label class="age-choice-name" for="childs">Дети:</label>
-                <input class="age-choice-childs" id="childs" type="text" name="childs" value="2">
-                <p class="warning">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети
-                  до 6 лет размещаются бесплатно.</p>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="date-item">
+            <label class="date-name date-name-in" for="check-in">Дата заезда:</label>
+            <input class="date-choice-in" id="check-in" type="text" name="check-in" value="27 апреля 2020">
+            <p class="date-choice-text date-choice-error">Мы не можем отправить вас в прошлое.</p>
+          </div>
+          <div class="date-item">
+            <label class="date-name date-name-out" for="check-out">Дата выезда:</label>
+            <input class="date-choice-out" id="check-out" type="text" name="check-out" value="1 сентября 2023">
+            <p class="date-choice-text">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+          <div class="age-choice-list">
+            <div class="age-choice-item">
+              <label class="age-choice-name age-adults" for="adults">Взрослые:</label>
+              <button class="age-minus" type="button"></button>
+              <input class="age-choice-adults" id="adults" type="text" name="adults" value="2">
+              <button class="age-plus" type="button"></button>
+            </div>
+            <div class="age-choice-item">
+              <label class="age-choice-name age-childs" for="childs">Дети:</label>
+              <span class="warning-image"></span>
+              <button class="age-minus" type="button"></button>
+              <input class="age-choice-childs" id="childs" type="text" name="childs" value="2">
+              <button class="age-plus" type="button"></button>
+              <!-- <p class="warning">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети
+                до 6 лет размещаются бесплатно.</p> -->
+            </div>
+          </div>
           <button class="modal-button" type="button">Найти</button>
         </form>
       </section>

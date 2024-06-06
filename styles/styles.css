@@ -62,7 +62,6 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   max-width: 1200px;
   margin: 0 auto;
-  /* rgba(0, 0, 0, 0.2) */
 }
 
 .page-header {
@@ -914,14 +913,14 @@ fieldset.booking-price {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  padding: 14px 131px 14px 20px;
+  padding: 14px 107px 14px 20px;
   background-color: #ffffff;
   appearance: none;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  position: relative;
   z-index: 3;
   background: url(../images/arrow.svg) no-repeat center right 20px;
+  width: 270px;
 }
 
 /* .select-control::before {
@@ -1006,15 +1005,32 @@ fieldset.booking-price {
   margin: 0;
 }
 
+.hotel-text {
+  margin: 0;
+}
+
+.hotel-price {
+  margin: 0;
+  justify-self: end;
+}
+
 .hotel-rating-star {
   background-image: url(../images/star.svg);
   /* background-size: 100% auto; */
   background-repeat: repeat-x;
   text-align: center;
-  padding: 10px 50x 10px 0;
+  /* padding: 10px 50x 10px 0; */
   width: 71px;
-  /* height: 37px; */
+  height: 20px;
   margin-top: 16px;
+}
+
+.hotel-star-middle {
+  width: 54px;
+}
+
+.hotel-star-min {
+  width: 36px;
 }
 
 .hotel-rating {
@@ -1026,6 +1042,7 @@ fieldset.booking-price {
   width: 140px;
   padding: 9px 22px 8px 23px;
   border-radius: 4px;
+  margin: 0;
 }
 
 .hotels-catalog--list {
@@ -1045,7 +1062,7 @@ fieldset.booking-price {
   gap: 16px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-  padding: 20px;
+  padding: 17px;
   width: 340px;
 }
 
@@ -1058,18 +1075,20 @@ fieldset.booking-price {
 }
 
 .button-hotel {
-  width: 140px;
-  padding: 8px 18px;
+  width: 142px;
+  padding: 8px 20px;
   background-color: #82b3d3;
 }
 
 .button-hotel-link {
   width: 140px;
-  padding: 8px 18px;
+  padding: 8px 26px;
+  gap: 10px;
 }
 
 .button--active {
   background-color: #7db54f;
+  padding: 8px 18px;
 }
 
 .hotels-line {
@@ -1165,6 +1184,10 @@ fieldset.booking-price {
   cursor: pointer;
 }
 
+.date-list {
+
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -1176,9 +1199,10 @@ fieldset.booking-price {
   text-transform: uppercase;
 }
 
-/* .auth-form {
+.auth-form {
   display: flex;
-} */
+  flex-direction: column;
+}
 
 .date-name,
 .age-choice-name {
@@ -1189,12 +1213,26 @@ fieldset.booking-price {
   text-decoration: none;
 }
 
+.date-name-in {
+  margin-right: 21px;
+}
+
+.date-name-out {
+  margin-right: 15px;
+}
+
 .date-choice-in,
 .date-choice-out {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  width: 440px;
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  padding-left: 20px;
 }
 
 .date-choice-text {
@@ -1202,11 +1240,26 @@ fieldset.booking-price {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
+  /* text-align: center; */
   color: #333333;
+  margin: 4px 87px 23px 157px;
+  /* margin-left: 157px;
+  margin-bottom: 23px; */
 }
 
 .date-choice-error {
   color: #ff5757;
+}
+
+.age-choice-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.age-choice-item {
+  display: flex;
+  align-items: center;
 }
 
 .age-choice-adults,
@@ -1215,6 +1268,56 @@ fieldset.booking-price {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
+  width: 31px;
+  height: 48px;
+  border: none;
+  margin: 0;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.age-adults {
+  margin-right: 46px;
+}
+
+.age-minus,
+.age-plus {
+  /* display: flex;
+  flex-direction: row; */
+  width: 40px;
+  height: 48px;
+  background-color: #f2f2f2;
+  border: none;
+  /* align-items: center; */
+  padding: 0;
+  margin: 0;
+}
+
+.age-minus {
+  background-image: url(../images/minus.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 4px 0 0 4px;
+}
+
+.age-plus {
+  background-image: url(../images/plus.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 0 4px 4px 0;
+}
+
+.warning-image {
+  background-image: url(../images/warning.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-size: 100% 100%; */
+  width: 26px;
+  height: 26px;
+  background-color: #83b3d3;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 46px;
 }
 
 .warning {
@@ -1238,10 +1341,11 @@ fieldset.booking-price {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
-  background-color: #82b3d3;
+  background-color: #83b3d3;
   width: 576px;
   height: 60px;
   padding: 8px 34px;
   border-radius: 10px;
   border: none;
+  margin-top: 48px;
 }
