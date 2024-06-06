@@ -718,7 +718,7 @@ body {
   padding: 0 70px 73px 70px;
 } */
 
-.booking-price {
+fieldset.booking-price {
   margin-left: 70px;
 }
 
@@ -756,7 +756,7 @@ body {
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: red;
+  background-color: #61696c;
 }
 
 .range-toggle {
@@ -780,12 +780,12 @@ body {
 
 .toggle-min {
   top: -8px;
-  left: -150px;
+  left: -205px;
 }
 
 .toggle-max {
   top: -8px;
-  right: 81px;
+  right: 65px;
 }
 
 /* .booking-price-range {
@@ -818,32 +818,46 @@ body {
   color: #000000;
   padding: 12px 78px 12px 20px;
   width: 143px;
-  margin-bottom: 36px;
+  margin-bottom: 43px;
   background-color: #f2f2f2;
   border: none;
 }
 
-.booking-price-min {
-  border-radius: 4px 0 0 4px;
+.booking-min {
   position: relative;
 }
 
-.booking-price-min::after {
+.booking-min::before {
+  content: "от";
   position: absolute;
-  content: "ОТ";
-  color: rgba(0, 0, 0, 1);
+  color: rgba(117, 97, 87, 0.3);
+  left: 105px;
+  bottom: 56px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.booking-price-min {
+  border-radius: 4px 0 0 4px;
 }
 
 .booking-price-max {
   border-radius: 0 4px 4px 0;
-  position: relative;
   margin-left: 2px;
 }
 
-.booking-price-max::after {
-  content: "ДО";
+.booking-max {
+  position: relative;
+}
+
+.booking-max::after {
+  content: "до";
   position: absolute;
-  color: rgba(0, 0, 0, 1);
+  color: rgba(117, 97, 87, 0.3);
+  left: 105px;
+  bottom: 56px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 /* .booking-price-min {
@@ -906,9 +920,11 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   position: relative;
+  z-index: 3;
+  background: url(../images/arrow.svg) no-repeat center right 20px;
 }
 
-.select-control::before {
+/* .select-control::before {
   position: absolute;
   content: "";
   width: 12px;
@@ -920,7 +936,7 @@ body {
   background-size: 100%;
   top: -2px;
   left: -1px;
-}
+} */
 
 .hotel-view-item {
   display: flex;
@@ -1065,7 +1081,7 @@ body {
   content: "";
   bottom: -40px;
   width: 1060px;
-  border: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .pagination-link {
@@ -1110,7 +1126,122 @@ body {
   margin-top: 96px;
 }
 
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
 
-.hahaha {
-  padding-left: 70px;
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.modal-auth {
+  width: 717px;
+}
+
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 52px;
+  right: 50px;
+  width: 52px;
+  height: 52px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/* .auth-form {
+  display: flex;
+} */
+
+.date-name,
+.age-choice-name {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.date-choice-in,
+.date-choice-out {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.date-choice-text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.date-choice-error {
+  color: #ff5757;
+}
+
+.age-choice-adults,
+.age-choice-childs {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.warning {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: rgba(51, 51, 51, 1);
+  width: 256px;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+}
+
+.modal-button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #82b3d3;
+  width: 576px;
+  height: 60px;
+  padding: 8px 34px;
+  border-radius: 10px;
+  border: none;
 }
