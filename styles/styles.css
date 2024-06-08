@@ -595,7 +595,7 @@ body {
 .booking-main {
   font-size: 60px;
   line-height: 78px;
-  margin: 35px 235px 8px 70px;
+  margin: 36px 235px 8px 70px;
 }
 
 .breadcrumbs-list {
@@ -638,6 +638,23 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+/* .booking-variants-list > li === .booking-item */
+.booking-variants-list > li {
+  padding-bottom: 16px;
+}
+
+/* .booking-item, .booking-type-item {
+  padding-bottom: 8px;
+}
+
+.booking-type-item:last-child, .booking-item:last-child  {
+  padding-bottom: 0;
+} */
+
+.booking-variants-list > li:last-child {
+  padding-bottom: 0;
 }
 
 .booking-item {
@@ -787,28 +804,6 @@ fieldset.booking-price {
   right: 65px;
 }
 
-/* .booking-price-range {
-  flex-basis: 100%;
-  flex-grow: 1;
-} */
-
-/* .booking-variants-list > li === .booking-item */
-.booking-variants-list > li {
-  padding-bottom: 18px;
-}
-
-/* .booking-item, .booking-type-item {
-  padding-bottom: 8px;
-}
-
-.booking-type-item:last-child, .booking-item:last-child  {
-  padding-bottom: 0;
-} */
-
-.booking-variants-list > li:last-child {
-  padding-bottom: 0;
-}
-
 .booking-price-choice {
   font-family: inherit;
   font-size: 18px;
@@ -902,7 +897,8 @@ fieldset.booking-price {
   display: flex;
   list-style: none;
   /* width: 400px; */
-  margin: 50px 70px 40px;
+  /* margin: 40px 69px 40px; */
+  margin: 48px 70px 48px;
   padding: 0;
   align-items: center;
 }
@@ -914,28 +910,14 @@ fieldset.booking-price {
   line-height: 21px;
   color: #333333;
   padding: 14px 107px 14px 20px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   appearance: none;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   z-index: 3;
   background: url(../images/arrow.svg) no-repeat center right 20px;
-  width: 270px;
+  width: 293px;
 }
-
-/* .select-control::before {
-  position: absolute;
-  content: "";
-  width: 12px;
-  height: 7px;
-  display: block;
-  background-image: url(../images/arrow.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  top: -2px;
-  left: -1px;
-} */
 
 .hotel-view-item {
   display: flex;
@@ -996,7 +978,7 @@ fieldset.booking-price {
 .hotels-all-title {
   font-size: 30px;
   line-height: 36px;
-  margin: 7px 175px 7px 70px;
+  margin: 7px 197px 7px 70px;
 }
 
 .hotels-catalog--title {
@@ -1016,21 +998,21 @@ fieldset.booking-price {
 
 .hotel-rating-star {
   background-image: url(../images/star.svg);
-  /* background-size: 100% auto; */
+  background-size: 24px 17px;
   background-repeat: repeat-x;
   text-align: center;
   /* padding: 10px 50x 10px 0; */
-  width: 71px;
-  height: 20px;
-  margin-top: 16px;
+  width: 97px;
+  height: 17px;
+  margin-top: 9px;
 }
 
 .hotel-star-middle {
-  width: 54px;
+  width: 72px;
 }
 
 .hotel-star-min {
-  width: 36px;
+  width: 47px;
 }
 
 .hotel-rating {
@@ -1149,10 +1131,14 @@ fieldset.booking-price {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-container--opened {
+  display: flex;
 }
 
 .modal {
@@ -1166,7 +1152,6 @@ fieldset.booking-price {
 .modal-auth {
   width: 717px;
 }
-
 
 .modal-close-button {
   position: absolute;
@@ -1182,10 +1167,6 @@ fieldset.booking-price {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-}
-
-.date-list {
-
 }
 
 .modal-title {
@@ -1215,10 +1196,40 @@ fieldset.booking-price {
 
 .date-name-in {
   margin-right: 21px;
+  position: relative;
 }
 
 .date-name-out {
   margin-right: 15px;
+  position: relative;
+}
+
+.date-name-in::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/calendar.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  top: 3px;
+  right: -438px;
+}
+
+.date-name-out::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/calendar.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  top: 3px;
+  right: -432px;
 }
 
 .date-choice-in,
@@ -1240,7 +1251,6 @@ fieldset.booking-price {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
-  /* text-align: center; */
   color: #333333;
   margin: 4px 87px 23px 157px;
   /* margin-left: 157px;
@@ -1288,9 +1298,9 @@ fieldset.booking-price {
   height: 48px;
   background-color: #f2f2f2;
   border: none;
-  /* align-items: center; */
   padding: 0;
   margin: 0;
+  cursor: pointer;
 }
 
 .age-minus {
@@ -1311,13 +1321,15 @@ fieldset.booking-price {
   background-image: url(../images/warning.svg);
   background-position: center center;
   background-repeat: no-repeat;
-  /* background-size: 100% 100%; */
   width: 26px;
   height: 26px;
   background-color: #83b3d3;
   border-radius: 50%;
   margin-left: 10px;
   margin-right: 46px;
+  display: block;
+  border: none;
+  cursor: pointer;
 }
 
 .warning {
@@ -1330,6 +1342,33 @@ fieldset.booking-price {
   width: 256px;
   padding: 15px 18px 18px 22px;
   border-radius: 10px;
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: -128%;
+}
+
+.warning::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 42%;
+  border-style: solid;
+  border-width: 0 20px 20px 20px;
+  border-color: transparent transparent rgba(51, 51, 51, 1) transparent;
+  transform: rotate(0deg);
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip:hover .warning {
+  display: block;
+}
+
+.tooltip:focus-within .warning {
+  display: block;
 }
 
 .modal-button {

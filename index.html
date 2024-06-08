@@ -222,7 +222,8 @@
     </div>
   </body>
 
-  <div class="modal-container">
+<!-- Класс modal-container--opened отвечает за открытие модального окна. -->
+  <div class="modal-container modal-container--opened">
     <div class="modal modal-auth">
       <button class="modal-close-button">
         <span class="visually-hidden">Закрыть</span>
@@ -249,12 +250,16 @@
             </div>
             <div class="age-choice-item">
               <label class="age-choice-name age-childs" for="childs">Дети:</label>
-              <span class="warning-image"></span>
+              <div class="tooltip">
+                <button class="warning-image" type="button">
+                  <span class="visually-hidden">Открыть подсказку</span>
+                </button>
+                <p class="warning">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети
+                  до 6 лет размещаются бесплатно.</p>
+              </div>
               <button class="age-minus" type="button"></button>
               <input class="age-choice-childs" id="childs" type="text" name="childs" value="2">
               <button class="age-plus" type="button"></button>
-              <!-- <p class="warning">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети
-                до 6 лет размещаются бесплатно.</p> -->
             </div>
           </div>
           <button class="modal-button" type="button">Найти</button>
