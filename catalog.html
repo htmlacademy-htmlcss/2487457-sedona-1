@@ -62,7 +62,7 @@
                 </svg>
               </a>
             </li>
-            <li class="breadcrumbs-item">
+            <li class="breadcrumbs-item breadcrumbs-hotels">
               Гостиницы
             </li>
           </ol>
@@ -83,28 +83,28 @@
                 <li class="booking-item">
                   <input class="booking-choice-in visually-hidden" name="comforts" type="checkbox" id="wi-fi">
                   <span class="control-mark"></span>
-                  <label class="booking-choice-type" for="wi-fi">Wi-fi</label>
+                  <label class="booking-choice-type booking-last" for="wi-fi">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="booking">
-              <legend class="booking-name">Тип жилья:</legend>
-              <ul class="booking-variants-list">
+              <legend class="booking-name">Тип Жилья:</legend>
+              <ul class="booking-variants-list booking-variants-housing">
                 <li class="booking-type-item">
                   <input class="booking-housing-type visually-hidden" name="accomodation" type="radio" checked
                     id="hotels">
                   <span class="control-mark-hotels"></span>
-                  <label for="hotels">Гостиница</label>
+                  <label class="booking-housing-name" for="hotels">Гостиница</label>
                 </li>
                 <li class="booking-type-item">
                   <input class="booking-housing-type visually-hidden" name="accomodation" type="radio" id="motels">
                   <span class="control-mark-hotels"></span>
-                  <label for="motels">Мотель</label>
+                  <label class="booking-housing-name" for="motels">Мотель</label>
                 </li>
                 <li class="booking-type-item">
                   <input class="booking-housing-type visually-hidden" name="accomodation" type="radio" id="apartments">
                   <span class="control-mark-hotels"></span>
-                  <label for="apartments">Апартаменты</label>
+                  <label class="booking-housing-name booking-last" for="apartments">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
@@ -124,7 +124,7 @@
 
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-bar" style="right: 0; width: 85px">
+                  <div class="range-bar" style="right: 0; width: 80px">
                     <button type="button" class="range-toggle toggle-min"></button>
                     <button type="button" class="range-toggle toggle-max"></button>
                   </div>
