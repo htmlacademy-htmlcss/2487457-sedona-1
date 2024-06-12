@@ -62,7 +62,7 @@
                 </svg>
               </a>
             </li>
-            <li class="breadcrumbs-item">
+            <li class="breadcrumbs-item breadcrumbs-hotels">
               Гостиницы
             </li>
           </ol>
@@ -78,51 +78,53 @@
                 <li class="booking-item">
                   <input class="booking-choice-in visually-hidden" name="comforts" type="checkbox" checked id="parking">
                   <span class="control-mark"></span>
-                  <label for="parking">Парковка</label>
+                  <label class="booking-choice-type" for="parking">Парковка</label>
                 </li>
                 <li class="booking-item">
                   <input class="booking-choice-in visually-hidden" name="comforts" type="checkbox" id="wi-fi">
                   <span class="control-mark"></span>
-                  <label for="wi-fi">Wi-fi</label>
+                  <label class="booking-choice-type booking-last" for="wi-fi">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="booking">
-              <legend class="booking-name">Тип жилья:</legend>
-              <ul class="booking-variants-list">
+              <legend class="booking-name">Тип Жилья:</legend>
+              <ul class="booking-variants-list booking-variants-housing">
                 <li class="booking-type-item">
                   <input class="booking-housing-type visually-hidden" name="accomodation" type="radio" checked
                     id="hotels">
                   <span class="control-mark-hotels"></span>
-                  <label for="hotels">Гостиница</label>
+                  <label class="booking-housing-name" for="hotels">Гостиница</label>
                 </li>
                 <li class="booking-type-item">
                   <input class="booking-housing-type visually-hidden" name="accomodation" type="radio" id="motels">
                   <span class="control-mark-hotels"></span>
-                  <label for="motels">Мотель</label>
+                  <label class="booking-housing-name" for="motels">Мотель</label>
                 </li>
                 <li class="booking-type-item">
                   <input class="booking-housing-type visually-hidden" name="accomodation" type="radio" id="apartments">
                   <span class="control-mark-hotels"></span>
-                  <label for="apartments">Апартаменты</label>
+                  <label class="booking-housing-name booking-last" for="apartments">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
+
             <fieldset class="booking-price booking">
               <legend class="booking-price-name">Стоимость, ₽:</legend>
               <ul class="booking-price-list">
-                <li class="booking-price-item">
+                <li class="booking-price-item booking-min">
                   <input class="booking-price-choice booking-price-min" type="text" name="from" placeholder="от"
                     value="0">
                 </li>
-                <li class="booking-price-item">
+                <li class="booking-price-item booking-max">
                   <input class="booking-price-choice booking-price-max" type="text" name="to" placeholder="до"
                     value="9000">
                 </li>
               </ul>
+
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-bar" style="right: 0; width: 100px">
+                  <div class="range-bar" style="right: 0; width: 80px">
                     <button type="button" class="range-toggle toggle-min"></button>
                     <button type="button" class="range-toggle toggle-max"></button>
                   </div>
@@ -130,7 +132,6 @@
                 <div class="range-wrapper-input">
                 </div>
               </div>
-
             </fieldset>
             <div class="buttons-wrapper booking">
               <button class="button booking-button button-main" type="submit">Применить</button>
@@ -168,7 +169,7 @@
           </div>
 
           </ul>
-          <ul class="hotels-catalog--list">
+          <ul class="hotels-catalog--list hotels-line">
             <li class="hotels-catalog--item">
               <a class="hotel-link" href="#">
                 <img src="images/hotel_amara.png" width="300" height="212" alt="ночное небо в ущелье">
@@ -211,16 +212,16 @@
                 <h3 class="hotels-catalog--title">Desert Quail Inn</h3>
               </a>
               <p class="hotel-text">Гостиница</p>
-              <p class="hotel-price">От 2500 ₽></p>
+              <p class="hotel-price">От 2500 ₽</p>
               <a class="button button-hotel-link" href="#">подробнее</a>
               <button class="button button-hotel" type="button">в избранное</button>
-              <div class="hotel-rating-star">
+              <div class="hotel-rating-star hotel-star-middle">
                 <span class="visually-hidden">3 звезды</span>
               </div>
               <p class="hotel-rating">Рейтинг: 6,9</p>
             </li>
 
-            <li class="hotels-catalog--item hotels-line">
+            <li class="hotels-catalog--item">
               <a class="hotel-link" href="#">
                 <img src="images/hotel_greentree.png" width="300" height="212" alt="ночная гора">
               </a>
@@ -231,7 +232,7 @@
               <p class="hotel-price">От 1500 ₽</p>
               <a class="button button-hotel-link" href="#">подробнее</a>
               <button class="button button-hotel" type="button">в избранное</button>
-              <div class="hotel-rating-star">
+              <div class="hotel-rating-star hotel-star-min">
                 <span class="visually-hidden">2 звезды</span>
               </div>
               <p class="hotel-rating">Рейтинг: 5,0</p>
