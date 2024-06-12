@@ -84,6 +84,7 @@ body {
   height: 64px;
   width: 140px;
   margin-right: 45px;
+  align-self: flex-start;
 }
 
 .navigation-logo-image {
@@ -97,10 +98,12 @@ body {
   margin: 0;
   padding: 0;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navigation-item {
   margin-right: 32px;
+  padding: 20px 0;
 }
 
 .navigation-user {
@@ -127,7 +130,7 @@ body {
   content: "";
   position: absolute;
   left: -2px;
-  bottom: -20px;
+  bottom: 0;
   height: 2px;
   width: 70px;
   background-color: #756257;
@@ -406,7 +409,7 @@ body {
   justify-content: center;
   padding: 82px 81px;
   flex-grow: 1;
-  flex-basis: 0;
+  /* flex-basis: 0; */
   position: relative;
   padding-top: 182px;
 }
@@ -562,7 +565,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 46px 81px 35px;
+  padding: 46px 72px 35px 81px;
 }
 
 .footer-social-list {
@@ -574,6 +577,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 200px;
+  min-width: 137px;
 }
 
 .footer-social-item {
@@ -585,17 +589,13 @@ body {
   align-items: center;
 }
 
-.footer-social-images {
-  padding: 0px, 10px, 0px, 10px;
-}
-
 .number {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   text-align: center;
   color: #000000;
-  margin-left: 15px;
+  margin-left: -9px;
 }
 
 .booking-choice-main {
@@ -621,6 +621,10 @@ body {
   padding-left: 70px;
   margin: 0;
   margin-bottom: -1px;
+}
+
+.breadcrumbs-navigation {
+  text-decoration: none;
 }
 
 .breadcrumbs-item::after {
@@ -706,7 +710,7 @@ body {
   background-position: center;
   background-size: 20px 20px;
   top: 0;
-  left: 0;
+  left: -1px;
 }
 
 .booking-choice-in:checked + .control-mark::before {
@@ -743,7 +747,7 @@ body {
   background-position: center;
   background-size: 20px 20px;
   top: -1px;
-  left: -1px;
+  left: -2px;
 }
 
 .booking-housing-type:checked + .control-mark-hotels::before {
@@ -800,6 +804,7 @@ fieldset.booking-price {
   height: 4px;
   margin-bottom: 8px;
   background-color: #ffffff;
+  margin-left: 4px;
 }
 
 .range-bar {
@@ -1029,11 +1034,12 @@ fieldset.booking-price {
 .hotels-catalog--item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
+  gap: 15px 14px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 18px;
   width: 340px;
+  padding-bottom: 20px;
 }
 
 .hotels-catalog--title {
@@ -1059,7 +1065,7 @@ fieldset.booking-price {
   /* padding: 10px 50x 10px 0; */
   width: 97px;
   height: 17px;
-  margin-top: 9px;
+  margin-top: 11px;
 }
 
 .hotel-star-middle {
@@ -1077,7 +1083,7 @@ fieldset.booking-price {
   color: #333333;
   background-color: #f2f2f2;
   width: 140px;
-  padding: 9px 22px 8px 23px;
+  padding: 9px 18px 8px 26px;
   border-radius: 4px;
   margin: 0;
 }
@@ -1094,6 +1100,7 @@ fieldset.booking-price {
   width: 142px;
   padding: 8px 20px;
   background-color: #82b3d3;
+  margin-left: 2px;
 }
 
 .button-hotel-link {
@@ -1119,6 +1126,13 @@ fieldset.booking-price {
   border-bottom: 1px solid #e6e6e6;
 }
 
+.pagination-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 84px 70px 73px;
+}
+
 .pagination-link {
   display: flex;
   font-size: 20px;
@@ -1128,7 +1142,7 @@ fieldset.booking-price {
   text-decoration: none;
   color: #ffffff;
   background-color: #82b3d3;
-  padding: 15px 25px;
+  padding: 12px 25px;
   border-radius: 4px;
   font-weight: 700;
   justify-content: center;
@@ -1147,13 +1161,6 @@ fieldset.booking-price {
   letter-spacing: 1px;
 }
 
-.pagination-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  margin: 80px 660px 60px 70px;
-}
-
 .pagination-item {
   margin-right: 8px;
 }
@@ -1163,7 +1170,12 @@ fieldset.booking-price {
 }
 
 .newsletter-title-catalog {
-  margin-top: 96px;
+  margin-top: 85px;
+  margin-bottom: 24px;
+}
+
+.newsletter {
+  padding-bottom: 105px;
 }
 
 .modal-container {
