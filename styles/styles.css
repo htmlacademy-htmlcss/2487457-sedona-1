@@ -880,14 +880,6 @@ fieldset.booking-price {
   line-height: 24px;
 }
 
-/* .booking-price-min {
-  margin-left: 2px;
-} */
-
-/* .booking {
-  padding: 0;
-} */
-
 .buttons-wrapper {
   display: flex;
   flex-direction: column;
@@ -1049,7 +1041,6 @@ fieldset.booking-price {
   background-size: 24px 17px;
   background-repeat: repeat-x;
   text-align: center;
-  /* padding: 10px 50x 10px 0; */
   width: 97px;
   height: 17px;
   margin-top: 11px;
@@ -1330,8 +1321,6 @@ fieldset.booking-price {
 
 .age-minus,
 .age-plus {
-  /* display: flex;
-  flex-direction: row; */
   width: 40px;
   height: 48px;
   background-color: #f2f2f2;
