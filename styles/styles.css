@@ -535,7 +535,7 @@ body {
 }
 
 .newsletter-form-mail {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   width: 452px;
   height: 52px;
@@ -663,7 +663,6 @@ body {
   list-style: none;
 }
 
-/* .booking-variants-list > li === .booking-item */
 .booking-variants-list > li {
   padding-bottom: 16px;
 }
@@ -928,13 +927,12 @@ fieldset.booking-price {
 }
 
 .select-control {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   padding: 14px 107px 14px 20px;
-  /* background-color: #ffffff; */
   appearance: none;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
