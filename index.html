@@ -216,57 +216,59 @@
         </ul>
         <a class="number" href="#">+7 (812) 812-12-12</a>
         <a class="logo-link" href="https://htmlacademy.ru/">
-          <img class="logo" src="images/html_academy.svg" alt="Логотип html академии" wight="115" height="33">
+          <img class="logo" src="images/html_academy.svg" alt="Логотип html академии" widht="115" height="33">
         </a>
       </footer>
     </div>
-  </body>
 
-<!-- Класс modal-container--opened отвечает за открытие модального окна. -->
-  <div class="modal-container modal-container--opened">
-    <div class="modal modal-auth">
-      <button class="modal-close-button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-      <section class="modal-content">
-        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <form class="auth-form" action="#" method="post">
-          <div class="date-item">
-            <label class="date-name date-name-in" for="check-in">Дата заезда:</label>
-            <input class="date-choice-in" id="check-in" type="text" name="check-in" value="27 апреля 2020">
-            <p class="date-choice-text date-choice-error">Мы не можем отправить вас в прошлое.</p>
-          </div>
-          <div class="date-item">
-            <label class="date-name date-name-out" for="check-out">Дата выезда:</label>
-            <input class="date-choice-out" id="check-out" type="text" name="check-out" value="1 сентября 2023">
-            <p class="date-choice-text">На эти даты есть свободные номера. Пока есть.</p>
-          </div>
-          <div class="age-choice-list">
-            <div class="age-choice-item">
-              <label class="age-choice-name age-adults" for="adults">Взрослые:</label>
-              <button class="age-minus" type="button"></button>
-              <input class="age-choice-adults" id="adults" type="text" name="adults" value="2">
-              <button class="age-plus" type="button"></button>
+    <!-- Класс modal-container--opened отвечает за открытие модального окна. -->
+    <div class="modal-container modal-container--opened">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="#" method="post">
+            <div class="date-item">
+              <label class="date-name date-name-in" for="check-in">Дата заезда:</label>
+              <input class="date-choice-in" id="check-in" type="text" name="check-in" value="27 апреля 2020">
+              <p class="date-choice-text date-choice-error">Мы не можем отправить вас в прошлое.</p>
             </div>
-            <div class="age-choice-item">
-              <label class="age-choice-name age-childs" for="childs">Дети:</label>
-              <div class="tooltip">
-                <button class="warning-image" type="button">
-                  <span class="visually-hidden">Открыть подсказку</span>
-                </button>
-                <p class="warning">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети
-                  до 6 лет размещаются бесплатно.</p>
+            <div class="date-item">
+              <label class="date-name date-name-out" for="check-out">Дата выезда:</label>
+              <input class="date-choice-out" id="check-out" type="text" name="check-out" value="1 сентября 2023">
+              <p class="date-choice-text">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <div class="age-choice-list">
+              <div class="age-choice-item">
+                <label class="age-choice-name age-adults" for="adults">Взрослые:</label>
+                <button class="age-minus" type="button"></button>
+                <input class="age-choice-adults" id="adults" type="text" name="adults" value="2">
+                <button class="age-plus" type="button"></button>
               </div>
-              <button class="age-minus" type="button"></button>
-              <input class="age-choice-childs" id="childs" type="text" name="childs" value="2">
-              <button class="age-plus" type="button"></button>
+              <div class="age-choice-item">
+                <label class="age-choice-name age-childs" for="childs">Дети:</label>
+                <div class="tooltip">
+                  <button class="warning-image" type="button">
+                    <span class="visually-hidden">Открыть подсказку</span>
+                  </button>
+                  <p class="warning">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                    Дети
+                    до 6 лет размещаются бесплатно.</p>
+                </div>
+                <button class="age-minus" type="button"></button>
+                <input class="age-choice-childs" id="childs" type="text" name="childs" value="2">
+                <button class="age-plus" type="button"></button>
+              </div>
             </div>
-          </div>
-          <button class="modal-button" type="button">Найти</button>
-        </form>
-      </section>
+            <button class="modal-button" type="button">Найти</button>
+          </form>
+        </section>
+      </div>
+
     </div>
 
-  </div>
+  </body>
 
 </html>
