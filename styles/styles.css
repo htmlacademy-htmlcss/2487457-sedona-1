@@ -409,9 +409,9 @@ body {
   justify-content: center;
   padding: 82px 81px;
   flex-grow: 1;
-  /* flex-basis: 0; */
   position: relative;
   padding-top: 182px;
+  max-width: 400px;
 }
 
 .services-house::after {
@@ -667,14 +667,6 @@ body {
 .booking-variants-list > li {
   padding-bottom: 16px;
 }
-
-/* .booking-item, .booking-type-item {
-  padding-bottom: 8px;
-}
-
-.booking-type-item:last-child, .booking-item:last-child  {
-  padding-bottom: 0;
-} */
 
 .booking-variants-list > li:last-child {
   padding-bottom: 0;
