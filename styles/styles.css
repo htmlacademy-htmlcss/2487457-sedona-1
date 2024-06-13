@@ -697,7 +697,6 @@ body {
   border-radius: 4px;
   display: none;
   background-image: url(../images/check.svg);
-  /* background-color: #ffffff; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 20px;
@@ -746,10 +745,6 @@ body {
   content: "";
   display: block;
 }
-
-/* .booking-choice {
-  padding: 0 70px 73px 70px;
-} */
 
 fieldset.booking-price {
   margin-left: 70px;
