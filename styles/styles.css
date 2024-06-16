@@ -56,6 +56,28 @@ body {
   padding: 8px 34px;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  background-color: #615048;
+  outline: none;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.button:disabled {
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #e5e5e5;
 }
 
 .shadow-container {
@@ -191,10 +213,10 @@ body {
 
 .hero {
   color: #000000;
-  background-color: #82b3d3;
+  background-color: rgba(131, 179, 211, 0.2);
   background-size: 100% auto, 100% auto;
   background-repeat: no-repeat no-repeat;
-  background-image: url("../images/devider.png"), url("../images/sedona-background-main.jpg");
+  background-image: url("../images/devider.svg"), url("../images/sedona_background_main.jpg");
   background-position: bottom center, center center;
   padding-top: 51px;
   padding-bottom: 82px;
@@ -293,7 +315,7 @@ body {
 }
 
 .advantages-inner-wide {
-  height: 100%
+  height: 100%;
 }
 
 .advantages-inner-narrow {
@@ -377,8 +399,6 @@ body {
 }
 
 .services-conteiner {
-  /* display: flex;
-  flex-direction: column; */
   margin: 0;
   padding: 64px 347px;
   text-align: center;
@@ -498,7 +518,7 @@ body {
 .newsletter-main {
   color: #ffffff;
   background-color: #82b3d3;
-  background-image: url("../images/newsletter-image.jpg");
+  background-image: url("../images/newsletter_image.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
@@ -532,6 +552,19 @@ body {
   border-radius: 0 4px 4px 0;
   font-size: 20px;
   line-height: 36px;
+  transition: 0.6s;
+}
+
+.button-newsletter:hover {
+  background-color: #68a2ca;
+}
+
+.button-newsletter:focus {
+  background-color: #68a2ca;
+}
+
+.button-newsletter:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .newsletter-form-mail {
@@ -601,7 +634,7 @@ body {
 .booking-choice-main {
   color: #ffffff;
   background-color: #82b3d3;
-  background-image: url("../images/form-mountains.jpg");
+  background-image: url("../images/form_mountains.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -893,6 +926,19 @@ fieldset.booking-price {
   border-radius: 4px;
   background-color: #82b3d3;
   margin-bottom: 32px;
+  transition: 0.6s;
+}
+
+.button-main:hover {
+  background-color: #68a2ca;
+}
+
+.button-main:focus {
+  background-color: #68a2ca;
+}
+
+.button-main:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .booking-button-reset {
@@ -900,6 +946,29 @@ fieldset.booking-price {
   height: 36px;
   background-color: transparent;
   list-style: none;
+  transition: 0.6s;
+}
+
+.booking-button-reset:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+}
+
+.booking-button-reset:focus {
+  background-color: transparent;
+  outline: 3px solid #83b3d3;
+}
+
+.booking-button-reset:active {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.booking-button-reset:disabled {
+  pointer-events: none;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
 }
 
 .hotels-container {
@@ -947,8 +1016,6 @@ fieldset.booking-price {
   height: 48px;
   margin: 0;
   padding: 0;
-  border: 2px solid #e5e5e5;
-  border-radius: 4px;
   margin-right: 8px;
   align-items: center;
 }
@@ -957,38 +1024,40 @@ fieldset.booking-price {
   margin-right: 0;
 }
 
-.hotel-view-main {
-  border-color: #000000;
-}
-
 .hotel-net {
   background-image: url(../images/net.svg);
   display: block;
-  width: 16px;
-  height: 14px;
+  width: 100%;
+  height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 16px 14px;
+  border: 2px solid #000000;
+  border-radius: 4px;
 }
 
 .hotel-description {
   background-image: url(../images/description.svg);
   display: block;
-  width: 16px;
-  height: 14px;
+  width: 100%;
+  height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 16px 14px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
 }
 
 .hotel-list {
   background-image: url(../images/list.svg);
   display: block;
-  width: 16px;
-  height: 14px;
+  width: 100%;
+  height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 16px 14px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
 }
 
 .hotels-catalog {
@@ -1070,22 +1139,48 @@ fieldset.booking-price {
   color: #000000;
 }
 
-.button-hotel {
-  width: 142px;
-  padding: 8px 20px;
-  background-color: #82b3d3;
-  margin-left: 2px;
-}
-
 .button-hotel-link {
   width: 140px;
   padding: 8px 26px;
   gap: 10px;
 }
 
+.button-hotel {
+  width: 142px;
+  padding: 8px 20px;
+  background-color: #82b3d3;
+  margin-left: 2px;
+  transition: 0.6s;
+}
+
+.button-hotel:hover {
+  background-color: #68a2ca;
+}
+
+.button-hotel:focus {
+  background-color: #68a2ca;
+}
+
+.button-hotel:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button--active {
   background-color: #7db54f;
   padding: 8px 18px;
+  transition: 0.6s;
+}
+
+.button--active:hover {
+  background-color: #6c9e42;
+}
+
+.button--active:focus {
+  background-color: #6c9e42;
+}
+
+.button--active:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotels-line {
@@ -1121,6 +1216,19 @@ fieldset.booking-price {
   font-weight: 700;
   justify-content: center;
   height: 60px;
+  transition: 0.6s;
+}
+
+.pagination-link:hover {
+  background-color: #68a2ca;
+}
+
+.pagination-link:focus {
+  background-color: #68a2ca;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-link--active {
@@ -1408,4 +1516,18 @@ fieldset.booking-price {
   border-radius: 10px;
   border: none;
   margin-top: 48px;
+  transition: 0.6s;
+}
+
+.modal-button:hover {
+  background-color: #68a2ca;
+}
+
+.modal-button:focus {
+  background-color: #68a2ca;
+}
+
+.modal-button:active {
+  color: rgba(255, 255, 255, 1);
+  background-color: #68a2ca;
 }
