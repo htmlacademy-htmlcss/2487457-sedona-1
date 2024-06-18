@@ -1572,7 +1572,7 @@ fieldset.booking-price {
   transition: 0.6s;
 }
 
-..modal-close-button:hover {
+.modal-close-button:hover {
   background-color: #e6e6e6;
 }
 
