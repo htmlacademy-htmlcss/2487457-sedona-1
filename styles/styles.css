@@ -1859,6 +1859,6 @@ fieldset.booking-price {
 }
 
 .modal-button:active {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #68a2ca;
 }
