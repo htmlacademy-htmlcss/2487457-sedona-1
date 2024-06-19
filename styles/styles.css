@@ -740,8 +740,6 @@ body {
   font-size: 60px;
   line-height: 78px;
   margin: 36px 235px 8px 70px;
-  max-width: 70%;
-  flex-wrap: wrap;
 }
 
 .breadcrumbs-list {
@@ -753,6 +751,8 @@ body {
   padding-left: 70px;
   margin: 0;
   margin-bottom: -1px;
+  max-width: 70%;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-navigation {
@@ -1565,11 +1565,24 @@ fieldset.booking-price {
   background-color: #f2f2f2;
   border: none;
   border-radius: 50%;
-  background-image: url(../images/close.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
   transition: 0.6s;
+}
+
+.modal-close-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  mask-image: url(../images/close.svg);
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: 14px 14px;
+  background-color: #000000;
+
 }
 
 .modal-close-button:hover {
@@ -1583,7 +1596,10 @@ fieldset.booking-price {
 
 .modal-close-button:active {
   background-color: #e6e6e6;
-  opacity: 0.3;
+}
+
+.modal-close-button:active::after {
+  background-color: #a1a1a1;
 }
 
 .modal-title {
@@ -1730,50 +1746,89 @@ fieldset.booking-price {
   padding: 0;
   margin: 0;
   cursor: pointer;
+  position: relative;
+  opacity: 1;
 }
 
 .age-minus {
-  background-image: url(../images/minus.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
   border-radius: 4px 0 0 4px;
+}
+
+.age-plus {
+  border-radius: 0 4px 4px 0;
+}
+
+.age-minus::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  mask-image: url(../images/minus_dark.svg);
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: 20px 20px;
+  background-color: rgba(117, 97, 87, 0.3);
   transition: 0.6s;
 }
 
-.age-minus:hover {
-  background-image: url(../images/minus_dark.svg);
+.age-minus:hover::after {
+  background-color: #000000;
 }
 
 .age-minus:focus {
-  background-image: url(../images/minus_dark.svg);
   outline: 2px solid #82b3d3;
+}
+
+.age-minus:focus::after {
+  background-color: #000000;
 }
 
 .age-minus:active {
   outline: none;
-  opacity: 0.7;
 }
 
-.age-plus {
-  background-image: url(../images/plus.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  border-radius: 0 4px 4px 0;
+.age-minus:active::after {
+  background-color: rgba(117, 97, 87, 0.3);
+}
+
+.age-plus::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  mask-image: url(../images/plus_dark.svg);
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: 20px 20px;
+  background-color: rgba(117, 97, 87, 0.3);
   transition: 0.6s;
 }
 
-.age-plus:hover {
-  background-image: url(../images/plus_dark.svg);
+.age-plus:hover::after {
+  background-color: #000000;
 }
 
 .age-plus:focus {
-  background-image: url(../images/plus_dark.svg);
   outline: 2px solid #82b3d3;
+}
+
+.age-plus:focus::after {
+  background-color: #000000;
 }
 
 .age-plus:active {
   outline: none;
-  opacity: 0.7;
+}
+
+.age-plus:active::after {
+  background-color: rgba(117, 97, 87, 0.3);
 }
 
 .warning-image {
@@ -1859,6 +1914,6 @@ fieldset.booking-price {
 }
 
 .modal-button:active {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #68a2ca;
 }
